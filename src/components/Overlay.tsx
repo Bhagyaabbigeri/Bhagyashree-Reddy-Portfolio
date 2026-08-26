@@ -62,7 +62,7 @@ export default function Overlay({ scrollYProgress, imageLayout }: OverlayProps) 
         className="fixed inset-x-4 bottom-6 md:inset-x-auto md:left-6 md:bottom-12 lg:left-10 lg:bottom-16 z-[90] max-w-[280px] sm:max-w-sm md:max-w-md lg:max-w-lg"
       >
         <div
-          className="w-full space-y-4 bg-[#030014]/80 border border-orange-500/30 backdrop-blur-xl rounded-2xl p-4 sm:p-6"
+          className="w-full bg-[#030014]/80 border border-orange-500/30 backdrop-blur-xl rounded-2xl p-4 sm:p-6"
           style={{ boxShadow: "0 0 30px rgba(249,115,22,0.1), 0 8px 32px rgba(0,0,0,0.6)" }}
         >
           <div className="flex flex-row items-center gap-4 sm:gap-6 text-left">
@@ -91,9 +91,6 @@ export default function Overlay({ scrollYProgress, imageLayout }: OverlayProps) 
               </h1>
             </div>
           </div>
-          <h2 className="text-[10px] sm:text-base md:text-lg text-orange-300 font-medium tracking-wide leading-tight">
-            Software Engineer | AI Engineer | Space Tech | Creative Director
-          </h2>
         </div>
       </div>
 
