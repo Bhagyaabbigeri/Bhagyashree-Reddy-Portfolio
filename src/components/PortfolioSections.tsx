@@ -128,9 +128,7 @@ export function IntroSection() {
               Bhagyashree Reddy
             </span>
           </h2>
-          <p className="text-[10px] md:text-lg font-mono text-cyan-400 font-medium tracking-[0.2em] uppercase px-4">
-            Software Engineer · AI Engineer · Space Tech · Creative Director
-          </p>
+
         </motion.div>
 
         <motion.div
@@ -142,16 +140,10 @@ export function IntroSection() {
           className="text-zinc-300 text-xs md:text-base leading-relaxed max-w-3xl mx-auto font-light tracking-wide space-y-4 px-6 md:px-0"
         >
           <p>
-            I&apos;m Bhagyashree Reddy — a Computer Science Engineer at VTU who writes code by day and maps constellations by night.
-          </p>
-          <p>
-            I build at the crossroads of AI, Full-Stack Development, and Space Technology — where logic meets imagination and engineering meets purpose. I specialize in Full-Stack Web Development, Android Engineering, REST APIs, and AI Solutions, with a focused interest in Space Technology.
-          </p>
-          <p className="hidden md:block">
-            Whether it&apos;s designing intelligent systems, crafting seamless mobile experiences, or pushing the boundaries of what software can do in space, I thrive where complex problems meet creative engineering — building systems that are not just functional, but meaningful.
+            I thrive at the intersection of technology, creativity, and problem-solving, with a growing focus on Space Technology and fast-paced environments. Through self-driven projects and startup experience, I&apos;ve developed strong skills in research, operations, analysis, troubleshooting, leadership, and taking ideas from concept to execution. I enjoy learning, taking ownership, and working on meaningful challenges where curiosity meets innovation.
           </p>
           <p className="text-orange-300/80 font-medium italic">
-            I don&apos;t just follow the roadmap — I help draw it.
+            I don&apos;t just follow the roadmap — I help shape it.
           </p>
         </motion.div>
 
@@ -297,90 +289,7 @@ export function EducationSection() {
   );
 }
 
-/* ─── SECTION 3: TECHNICAL SKILLS ─── */
-interface SkillGroup {
-  category: string;
-  icon: string;
-  glow: string;
-  pillGlow: string;
-  items: string[];
-  link?: string;
-}
-
-const skillGroups: SkillGroup[] = [
-  {
-    category: "Languages",
-    icon: "💻",
-    glow: "hover:border-orange-500/40 hover:shadow-[0_0_25px_rgba(249,115,22,0.15)]",
-    pillGlow: "bg-orange-500/10 border-orange-500/20 text-orange-200 shadow-[0_0_10px_rgba(249,115,22,0.1)] hover:shadow-[0_0_15px_rgba(249,115,22,0.3)] hover:border-orange-500/50",
-    items: ["Familiar: Java and Python", "Project: JavaScript, TypeScript and Kotlin"],
-  },
-  {
-    category: "Frameworks",
-    icon: "⚙️",
-    glow: "hover:border-cyan-500/40 hover:shadow-[0_0_25px_rgba(6,182,212,0.15)]",
-    pillGlow: "bg-cyan-500/10 border-cyan-500/20 text-cyan-200 shadow-[0_0_10px_rgba(6,182,212,0.1)] hover:shadow-[0_0_15px_rgba(6,182,212,0.3)] hover:border-cyan-500/50",
-    items: [
-      "HTML",
-      "CSS",
-      "REST APIs",
-      "Tailwind CSS",
-      "React.js",
-      "Next.js",
-      "Node.js",
-      "Express.js",
-      "Flask",
-      "Flask-SocketIO",
-      "Three.js",
-      "Socket.IO",
-      "Vite",
-      "shadcn/ui",
-      "Material Design 3",
-      "Jetpack Navigation",
-      "WorkManager",
-      "Hilt",
-    ],
-  },
-  {
-    category: "Databases",
-    icon: "🗄️",
-    glow: "hover:border-purple-500/40 hover:shadow-[0_0_25px_rgba(168,85,247,0.15)]",
-    pillGlow: "bg-purple-500/10 border-purple-500/20 text-purple-200 shadow-[0_0_10px_rgba(168,85,247,0.1)] hover:shadow-[0_0_15px_rgba(168,85,247,0.3)] hover:border-purple-500/50",
-    items: ["MongoDB", "MySQL", "SQLite", "Room Database"],
-  },
-  {
-    category: "Others",
-    icon: "🔧",
-    glow: "hover:border-emerald-500/40 hover:shadow-[0_0_25px_rgba(16,185,129,0.15)]",
-    pillGlow: "bg-emerald-500/10 border-emerald-500/20 text-emerald-200 shadow-[0_0_10px_rgba(16,185,129,0.1)] hover:shadow-[0_0_15px_rgba(16,185,129,0.3)] hover:border-emerald-500/50",
-    items: [
-      "OpenCV",
-      "Haar Cascade",
-      "LBPH",
-      "SGP4/SDP4",
-      "PyJWT",
-      "Firebase",
-      "Twilio",
-      "LangChain",
-      "OpenAI APIs",
-      "TanStack Query",
-    ],
-  },
-  {
-    category: "Certifications",
-    icon: "🏆",
-    glow: "hover:border-amber-500/40 hover:shadow-[0_0_25px_rgba(245,158,11,0.15)]",
-    pillGlow: "bg-amber-500/10 border-amber-500/20 text-amber-200 shadow-[0_0_10px_rgba(245,158,11,0.1)] hover:shadow-[0_0_15px_rgba(245,158,11,0.3)] hover:border-amber-500/50",
-    items: [
-      "Career Essentials in Gen-AI",
-      "ML",
-      "Deep Learning",
-      "Cybersecurity (Microsoft + LinkedIn)",
-    ],
-    link: "https://github.com/Bhagyaabbigeri/Certificates",
-  },
-];
-
+/* ─── SECTION 3: HOW I THINK & WORK ─── */
 export function SkillsSection() {
   return (
     <section id="skills" className="relative w-full bg-[#030014] px-6 py-14 md:py-20 z-20 overflow-hidden">
@@ -407,7 +316,7 @@ export function SkillsSection() {
           className="text-center md:text-left space-y-2"
         >
           <h2 className="text-sm md:text-base font-mono font-bold tracking-[0.3em] text-cyan-400 uppercase">
-            TECHNICAL COMMAND CENTER
+            HOW I THINK &amp; WORK
           </h2>
           <div className="h-[2px] w-20 bg-gradient-to-r from-cyan-400 to-transparent mx-auto md:mx-0" />
         </motion.div>
@@ -439,20 +348,20 @@ export function SkillsSection() {
             <div className="px-6 py-4 border-b border-white/5 flex items-center justify-between bg-white/[0.01]">
               <div className="flex items-center gap-4">
                 <div className="flex flex-col">
-                  <span className="text-[10px] font-mono font-bold text-zinc-500 uppercase tracking-widest">Visual Preset</span>
+                  <span className="text-[10px] font-mono font-bold text-zinc-500 uppercase tracking-widest">Operational Mode</span>
                   <span className="text-white font-bold text-sm tracking-tight flex items-center gap-2">
-                    NEON WAVEFORM V3 <Sparkles className="w-3 h-3 text-cyan-400" />
+                    MINDSET CORE V1 <Sparkles className="w-3 h-3 text-cyan-400" />
                   </span>
                 </div>
               </div>
               <div className="hidden sm:flex items-center gap-4 md:gap-8 font-mono text-[9px] uppercase tracking-[0.2em] text-zinc-500">
-                <div className="flex flex-col items-end"><span className="text-cyan-400 font-bold">100 MHz</span><span>Freq Spectrum</span></div>
-                <div className="flex flex-col items-end sm:hidden md:flex"><span className="text-orange-400 font-bold">0.3 s</span><span>Beat Detection</span></div>
-                <div className="flex flex-col items-end"><span className="text-white font-bold">23.4%</span><span>System Load</span></div>
+                <div className="flex flex-col items-end"><span className="text-cyan-400 font-bold">ACTIVE</span><span>Focus Mode</span></div>
+                <div className="flex flex-col items-end sm:hidden md:flex"><span className="text-orange-400 font-bold">6</span><span>Core Systems</span></div>
+                <div className="flex flex-col items-end"><span className="text-white font-bold">ON</span><span>Curiosity Drive</span></div>
               </div>
             </div>
 
-            {/* Central Visualizer Area */}
+            {/* Central Card Grid */}
             <div className="flex-1 relative flex items-center justify-center p-4 md:p-8 min-h-[300px] md:min-h-[400px]">
                {/* Animated Waveforms */}
                <div className="absolute inset-0 flex items-center justify-center opacity-40 overflow-hidden">
@@ -473,11 +382,7 @@ export function SkillsSection() {
                             `M 0 ${200 + (i - 2.5) * 15} Q 200 ${100 + i * 40}, 400 ${200 + (i - 2.5) * 15} T 800 ${200 + (i - 2.5) * 15}`,
                           ]
                         }}
-                        transition={{
-                          duration: 4 + i,
-                          repeat: Infinity,
-                          ease: "easeInOut"
-                        }}
+                        transition={{ duration: 4 + i, repeat: Infinity, ease: "easeInOut" }}
                       />
                     ))}
                   </svg>
@@ -486,87 +391,55 @@ export function SkillsSection() {
                {/* Center Glow */}
                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-32 bg-cyan-500/20 blur-[100px] pointer-events-none rounded-full" />
 
-               {/* Tech Stack Floating Grid */}
-               <div className="relative z-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full">
-                  {skillGroups.map((group, idx) => (
+               {/* Mindset Cards */}
+               <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
+                  {[
+                    { id: "01", label: "RESEARCH", desc: "Exploring ideas, gathering information, understanding problems, and discovering meaningful insights.",                                                glow: "hover:border-cyan-500/50 hover:shadow-[0_0_30px_rgba(6,182,212,0.2)]",    iconColor: "text-cyan-400",    badgeBg: "bg-cyan-500/10 border-cyan-500/20 text-cyan-400",      dotColor: "bg-cyan-400" },
+                    { id: "02", label: "OPERATE",  desc: "Taking action, managing priorities, keeping things moving, and ensuring work progresses smoothly.",                                                glow: "hover:border-orange-500/50 hover:shadow-[0_0_30px_rgba(249,115,22,0.2)]", iconColor: "text-orange-400",  badgeBg: "bg-orange-500/10 border-orange-500/20 text-orange-400", dotColor: "bg-orange-400" },
+                    { id: "03", label: "ANALYZE",  desc: "Breaking down complex problems, identifying patterns, evaluating possibilities, and thinking critically.",                                          glow: "hover:border-purple-500/50 hover:shadow-[0_0_30px_rgba(168,85,247,0.2)]", iconColor: "text-purple-400",  badgeBg: "bg-purple-500/10 border-purple-500/20 text-purple-400",  dotColor: "bg-purple-400" },
+                    { id: "04", label: "SOLVE",    desc: "Troubleshooting challenges, exploring different approaches, and turning problems into practical solutions.",                                         glow: "hover:border-emerald-500/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.2)]",iconColor: "text-emerald-400", badgeBg: "bg-emerald-500/10 border-emerald-500/20 text-emerald-400",dotColor: "bg-emerald-400" },
+                    { id: "05", label: "LEAD",     desc: "Taking ownership, coordinating with others, making decisions, and moving ideas toward execution.",                                                  glow: "hover:border-amber-500/50 hover:shadow-[0_0_30px_rgba(245,158,11,0.2)]",  iconColor: "text-amber-400",   badgeBg: "bg-amber-500/10 border-amber-500/20 text-amber-400",     dotColor: "bg-amber-400" },
+                    { id: "06", label: "CREATE",   desc: "Combining technology and creativity to explore ideas, build meaningful solutions, and communicate them clearly.",                                   glow: "hover:border-pink-500/50 hover:shadow-[0_0_30px_rgba(236,72,153,0.2)]",   iconColor: "text-pink-400",    badgeBg: "bg-pink-500/10 border-pink-500/20 text-pink-400",        dotColor: "bg-pink-400" },
+                  ].map((card, idx) => (
                     <motion.div
-                      key={group.category}
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: idx * 0.1 }}
-                      className="p-4 rounded-xl bg-white/[0.02] border border-white/5 backdrop-blur-md hover:border-cyan-500/30 group transition-all"
+                      key={card.id}
+                      initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                      whileHover={{ y: -6, scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: idx * 0.08, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                      className={`group relative p-5 rounded-2xl bg-white/[0.02] border border-white/5 backdrop-blur-md cursor-pointer transition-all duration-300 ${card.glow}`}
                     >
-                      <div className="flex items-center gap-2 mb-3">
-                         <span className="text-lg opacity-80 group-hover:scale-110 transition-transform">{group.icon}</span>
-                         <span className="text-[10px] font-mono font-black text-zinc-400 uppercase tracking-widest">{group.category}</span>
+                      <div className="flex items-center justify-between mb-4">
+                        <span className={`text-[10px] font-mono font-black tracking-[0.3em] px-2 py-0.5 rounded-full border ${card.badgeBg}`}>{card.id}</span>
+                        <span className={`w-1.5 h-1.5 rounded-full ${card.dotColor} opacity-60 group-hover:opacity-100 transition-all`} />
                       </div>
-                      <div className="flex flex-wrap gap-1.5">
-                         {group.items.map(item => (
-                           <span key={item} className="text-[9px] font-mono text-cyan-400/70 border border-cyan-500/10 px-1.5 py-0.5 rounded bg-cyan-500/5">
-                             {item}
-                           </span>
-                         ))}
-                      </div>
+                      <h3 className={`text-sm font-mono font-black tracking-[0.2em] uppercase mb-3 ${card.iconColor} group-hover:tracking-[0.3em] transition-all duration-300`}>{card.label}</h3>
+                      <p className="text-[11px] md:text-xs text-zinc-400 leading-relaxed font-light group-hover:text-zinc-300 transition-colors duration-300">{card.desc}</p>
                     </motion.div>
                   ))}
                </div>
             </div>
 
-            {/* Dashboard Bottom Data Feed */}
-            <div className="px-6 py-6 border-t border-white/5 bg-white/[0.01] grid grid-cols-1 md:grid-cols-3 gap-8">
-               <div className="space-y-3">
-                  <div className="flex justify-between text-[9px] font-mono uppercase tracking-widest text-zinc-500">
-                    <span>Neural Signal Strength</span>
-                    <span className="text-cyan-400">98.2%</span>
-                  </div>
-                  <div className="h-1.5 w-full bg-zinc-900 rounded-full overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: "98.2%" }}
-                      transition={{ duration: 2, delay: 0.5 }}
-                      className="h-full bg-gradient-to-r from-cyan-600 to-cyan-400 shadow-[0_0_10px_rgba(6,182,212,0.5)]"
-                    />
-                  </div>
-                  <p className="text-[9px] font-mono text-zinc-600 leading-relaxed italic">
-                    AI/ML protocols calibrated for maximum performance across all signal layers.
-                  </p>
-               </div>
-
-               <div className="space-y-3">
-                  <div className="flex justify-between text-[9px] font-mono uppercase tracking-widest text-zinc-500">
-                    <span>Full-Stack Synchronization</span>
-                    <span className="text-orange-400">92.5%</span>
-                  </div>
-                  <div className="h-1.5 w-full bg-zinc-900 rounded-full overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: "92.5%" }}
-                      transition={{ duration: 2, delay: 0.7 }}
-                      className="h-full bg-gradient-to-r from-orange-600 to-orange-400 shadow-[0_0_10px_rgba(249,115,22,0.5)]"
-                    />
-                  </div>
-                  <p className="text-[9px] font-mono text-zinc-600 leading-relaxed italic">
-                    Cross-platform architecture alignment verified verified for standard environments.
-                  </p>
-               </div>
-
-               <div className="flex flex-col justify-center gap-3">
-                  {skillGroups.find(g => g.category === "Certifications")?.link && (
-                    <a
-                      href={skillGroups.find(g => g.category === "Certifications")?.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-between p-3 rounded-xl bg-orange-500/5 border border-orange-500/20 text-orange-400 hover:bg-orange-500 hover:text-black transition-all group"
-                    >
-                      <span className="text-[10px] font-mono font-bold tracking-widest uppercase">View Certificates</span>
-                      <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                    </a>
-                  )}
-                  <div className="flex items-center justify-between text-[9px] font-mono text-zinc-500 px-1">
-                    <span>Latency: 12ms</span>
-                    <span>Region: Earth/Mars Relay</span>
-                  </div>
-               </div>
+            {/* Dashboard Bottom */}
+            <div className="px-6 py-6 border-t border-white/5 bg-white/[0.01] flex flex-col md:flex-row items-center justify-between gap-6">
+               <p className="font-mono text-[10px] md:text-xs tracking-[0.25em] uppercase text-zinc-400 text-center md:text-left">
+                 <span className="text-cyan-400">CURIOUS BY NATURE</span>
+                 <span className="text-zinc-600 mx-2">•</span>
+                 <span className="text-orange-400">DRIVEN BY PROBLEMS</span>
+                 <span className="text-zinc-600 mx-2">•</span>
+                 <span className="text-purple-400">BUILT TO EXPLORE</span>
+               </p>
+               <a
+                 href="https://github.com/Bhagyaabbigeri?tab=repositories"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="flex items-center gap-3 px-4 py-3 rounded-xl bg-orange-500/5 border border-orange-500/20 text-orange-400 hover:bg-orange-500 hover:text-black transition-all group shrink-0"
+               >
+                 <span className="text-[10px] font-mono font-bold tracking-widest uppercase">View Repositories</span>
+                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </a>
             </div>
           </div>
         </motion.div>
@@ -703,7 +576,7 @@ export function ExperienceSection() {
                   </div>
                   <div>
                     <h3 className="text-white text-lg md:text-2xl font-bold tracking-tight leading-tight group-hover:text-cyan-300 transition-colors duration-300">
-                      Creative Director
+                      Operations &amp; Creative Lead
                     </h3>
                     <div className="flex items-center gap-2 mt-1">
                       <span className="text-cyan-400 font-mono text-[10px] font-bold tracking-widest uppercase">Involynk</span>
@@ -721,10 +594,10 @@ export function ExperienceSection() {
                 <div className="absolute left-0 top-0 w-1 h-full bg-cyan-500/10 rounded-full" />
                 <div className="text-zinc-400 text-xs md:text-sm leading-relaxed pl-5 font-light space-y-3">
                   <p>
-                    Leading the Creative Layer at Involynk. Designing immersive visual identities and bridging the gap between high-level technology (AI/Digital Infrastructure) and human-centric brand storytelling.
+                    Coordinated cross-functional initiatives involving research, communication, content execution, and project delivery across multiple priorities.
                   </p>
                   <p>
-                    Directing client projects across web development, app development, AI solutions, UI/UX design, branding and automation systems. Overseeing creative direction, design systems, social media strategy, SEO, content creation and lead funnels to drive brand authority and client acquisition.
+                    Developed AI-assisted creative concepts and workflows while managing deliverables and timelines across projects.
                   </p>
                 </div>
               </div>
@@ -751,7 +624,13 @@ export function ExperienceSection() {
 
             <div className="pt-6 border-t border-white/[0.05]">
               <div className="flex flex-wrap gap-2">
-                {["Visual Identity", "UI/UX", "Brand Storytelling", "Creative Direction", "AI Ecosystems"].map((tag) => (
+                {[
+                  "Operations",
+                  "Research & Analysis",
+                  "Cross-functional Coordination",
+                  "Creative Execution",
+                  "AI-Assisted Workflows",
+                ].map((tag) => (
                   <motion.span
                     key={tag}
                     whileHover={{ scale: 1.1, y: -2 }}

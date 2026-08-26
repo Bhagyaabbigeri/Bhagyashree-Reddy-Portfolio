@@ -47,6 +47,16 @@ function RightIcon(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
+function OrbitalControlIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <circle cx="12" cy="12" r="3" />
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(-30 12 12)" />
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(30 12 12)" />
+    </svg>
+  );
+}
+
 interface ProjectItem {
   id: string;
   num: string;
@@ -88,8 +98,34 @@ const projects: ProjectItem[] = [
     ],
   },
   {
-    id: "gokulahealth",
+    id: "orbital-command",
     num: "02",
+    title: "Orbital Command",
+    desc: "An AI-powered Mission Control Center designed to support satellite mission planning, telemetry monitoring, fleet operations, anomaly analysis, and intelligent operational decision-making. Orbital Command brings mission workflows, space situational awareness, real-time monitoring, and AI-assisted analysis together into a unified command interface.",
+    tags: ["Mission Control", "Satellite Operations", "Fleet Telemetry", "SSA & Orbit Tracking", "AI Operations", "Space Tech"],
+    link: "https://github.com/Bhagyaabbigeri/Orbital-Command",
+    language: "Space Tech",
+    langColor: "#F97316",
+    icon: OrbitalControlIcon,
+    accent: "from-orange-500/30 to-cyan-400/10",
+    image: "/projects/orbital-command/dashboard.png",
+    screenshots: [
+      "/projects/orbital-command/dashboard.png",
+      "/projects/orbital-command/command_center.png",
+      "/projects/orbital-command/mission_planner.png",
+      "/projects/orbital-command/orbit_map.png",
+      "/projects/orbital-command/ssa_console.png",
+      "/projects/orbital-command/telemetry.png",
+      "/projects/orbital-command/fleet.png",
+      "/projects/orbital-command/ground_stations.png",
+      "/projects/orbital-command/ai_assistant.png",
+      "/projects/orbital-command/alerts.png",
+      "/projects/orbital-command/login.png",
+    ],
+  },
+  {
+    id: "gokulahealth",
+    num: "03",
     title: "GokulaHealth",
     desc: "A comprehensive offline-first Android livestock management ecosystem. Built with MVVM + Clean Architecture, featuring automated milk yield analytics via MPAndroidChart, an intelligent vaccination scheduler with WorkManager, and multi-breed livestock profile management.",
     tags: ["Kotlin", "MVVM", "Room", "Hilt", "WorkManager", "Jetpack Compose", "MPAndroidChart"],
@@ -110,7 +146,7 @@ const projects: ProjectItem[] = [
   },
   {
     id: "empowerher",
-    num: "03",
+    num: "04",
     title: "EmpowerHer",
     desc: "A comprehensive women's safety and empowerment platform. Features a one-tap SOS system with real-time GPS location sharing via Twilio, an AI-powered safety assistant for legal and self-defense guidance, and a community hub for mentorship and safe accommodation discovery.",
     tags: ["React", "TypeScript", "Node.js", "Express.js", "MongoDB", "Twilio", "AI Assistant"],
@@ -132,7 +168,7 @@ const projects: ProjectItem[] = [
   },
   {
     id: "real-time-face-recognition",
-    num: "04",
+    num: "05",
     title: "Real-time Face Recognition",
     desc: "Real-time face recognition system using OpenCV and LBPH algorithm for high-accuracy biometric identification.",
     tags: ["Python", "OpenCV", "LBPH Algorithm", "Face Recognition"],
@@ -144,7 +180,7 @@ const projects: ProjectItem[] = [
   },
   {
     id: "hackvyuha-03",
-    num: "05",
+    num: "06",
     title: "HackVyuha-03",
     desc: "Hackathon project that secured a top 50 ranking out of 150 teams at BLDEAs HackVyuha.",
     tags: ["JavaScript", "HTML", "CSS", "Hackathon"],
@@ -156,7 +192,7 @@ const projects: ProjectItem[] = [
   },
   {
     id: "sde-full-stack",
-    num: "06",
+    num: "07",
     title: "SDE-Full-Stack",
     desc: "Full-stack development projects from SDE Internship at Algorithms365, focusing on scalable Java systems.",
     tags: ["Java", "Full Stack", "Spring", "Database"],

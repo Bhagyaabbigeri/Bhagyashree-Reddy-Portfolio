@@ -197,8 +197,9 @@ export default function Overlay({ scrollYProgress, imageLayout }: OverlayProps) 
           <div className="space-y-3">
             {[
               { name: "SpaceRisk-Radar", desc: "Real-time 3D satellite tracking", dot: "bg-orange-400" },
-              { name: "GokulaHealth",    desc: "Offline-first Android cattle farm app", dot: "bg-cyan-400"   },
-              { name: "EmpowerHer",     desc: "Women's safety platform with SOS", dot: "bg-amber-400"  },
+              { name: "Orbital Command", desc: "AI-powered Mission Control Center", dot: "bg-cyan-400" },
+              { name: "GokulaHealth",    desc: "Offline-first Android cattle farm app", dot: "bg-emerald-400" },
+              { name: "EmpowerHer",     desc: "Women's safety platform with SOS", dot: "bg-amber-400" },
             ].map((p) => (
               <div key={p.name} className="flex items-start gap-3 text-left">
                 <span className={`w-1 h-1 rounded-full mt-1.5 flex-shrink-0 ${p.dot}`} />
